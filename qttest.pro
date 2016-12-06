@@ -21,7 +21,7 @@ FORMS    += mainwindow.ui
 
 greaterThan(QT_MAJOR_VERSION, 4) {
     QT += widgets
-    QT += webkitwidgets
+    QT += webenginewidgets
 } else {
     QT += webkit
 }

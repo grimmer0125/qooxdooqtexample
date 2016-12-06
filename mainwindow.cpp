@@ -4,7 +4,7 @@
 
 //#include <QWebInspector>
 #include <QWidget>
-#include <QWebView>
+//#include <QWebView>
 //#include <QtWebKitWidgets>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -12,11 +12,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {  
 //    m_view = new QWebView(this);
-    QWebView webview(this);
+//    QWebView webview(this);
 
     qDebug() << "q webview";
 
-     webview.load(QUrl("http://www.tudou.com/"));
+//     webview.load(QUrl("http://www.tudou.com/"));
 
 //    QWebInspector * m_inspector = nullptr;
 //    m_inspector = new QWebInspector( nullptr);

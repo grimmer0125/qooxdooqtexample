@@ -4,11 +4,12 @@
 #include <QApplication>
 #include <QPushButton>
 //#include <QWebSettings>
-#include <QWebView>
+//#include <QWebView>
+#include <QWebEngineView>
 
-#include <QWebInspector>
+//#include <QWebInspector>
 
-#include <QWebSettings>
+//#include <QWebSettings>
 
 int main(int argc, char *argv[])
 {
@@ -22,7 +23,7 @@ int main(int argc, char *argv[])
 
     QMainWindow w;
 
-    QWebView webview(&w);
+    QWebEngineView webview(&w);
 
 
     qDebug() << "q webview";
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
     //work
     // webview.load(QUrl("file:///Users/grimmer/qttest/test.html"));
 //     webview.load(QUrl("file:///Users/grimmer/qttest/qooxdoo-3.5-sdk/test/source/index.html"));
-     webview.load(QUrl("file:///Users/grimmer/qttest/qooxdoo-5.0.1-sdk/custom/source/index.html"));
+     webview.load(QUrl("file:///Users/grimmer/git/qooxdooqtexample/qooxdoo-5.0.1-sdk/custom/source/index.html"));
 
 
 
@@ -47,15 +48,15 @@ int main(int argc, char *argv[])
 
 
     // enable web inspector
-    QWebInspector m_inspector;// = new QWebInspector( nullptr);
+//    QWebInspector m_inspector;// = new QWebInspector( nullptr);
 
-    QWebSettings::globalSettings()->setAttribute( QWebSettings::DeveloperExtrasEnabled, true);
+//    QWebSettings::globalSettings()->setAttribute( QWebSettings::DeveloperExtrasEnabled, true);
 
 //    webview.page()->settings()->setAttribute(QWebSettings::DeveloperExtrasEnabled, true);
 
-    m_inspector.setPage(webview.page());
+/*    m_inspector.setPage(webview.page());
     m_inspector.resize( 800, 600);
-    m_inspector.setVisible(true);// setVisible(true);
+    m_inspector.setVisible(true);*/// setVisible(true);
 //    m_inspector.show();
 
 //    QPushButton *button = new QPushButton("Hello World", &);
