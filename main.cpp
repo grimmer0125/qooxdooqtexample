@@ -34,7 +34,11 @@ int main(int argc, char *argv[])
 //    webview.load(QUrl("http://www.google.com/"));
 
     //work
-     webview.load(QUrl("file:///Users/grimmer/qttest/test.html"));
+    // webview.load(QUrl("file:///Users/grimmer/qttest/test.html"));
+//     webview.load(QUrl("file:///Users/grimmer/qttest/qooxdoo-3.5-sdk/test/source/index.html"));
+     webview.load(QUrl("file:///Users/grimmer/qttest/qooxdoo-5.0.1-sdk/custom/source/index.html"));
+
+
 
     //work
 //    webview.load(QUrl::fromLocalFile("/Users/grimmer/qttest/test.html"));
