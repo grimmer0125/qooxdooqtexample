@@ -18,3 +18,14 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+
+greaterThan(QT_MAJOR_VERSION, 4) {
+    QT += widgets
+    QT += webkitwidgets
+} else {
+    QT += webkit
+}
+
+OTHER_FILES += \
+    test.html \
+    index.js
